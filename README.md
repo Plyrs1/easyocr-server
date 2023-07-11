@@ -1,11 +1,16 @@
-# Python OCR Server
+# Karuta Card OCR
 
 Powered by [FastAPI](https://github.com/tiangolo/fastapi) + [EasyOCR](https://github.com/JaidedAI/EasyOCR).
 Specifically, FastAPI runs the API server for uploading image files and EasyOCR does the text detections.
 
-Basic implementation to handle english text without GPU support.
+Modified version of [Python OCR Server](https://github.com/gerardrbentley/easyocr-server) by [gerardrbentley](https://github.com/gerardrbentley). The primary function of this python app is to detects text in Karuta cards.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/gerardrbentley/easyocr-server)
+## Usage
+Send `POST` request to `/ocr` with the image as the value of form id `file`. You'll need to use `Content-Type: multipart/form-data;`. Returned data will be like this:
+```json
+
+```
+
 
 ## Local Run
 

@@ -2,7 +2,7 @@ import logging
 
 from fastapi import FastAPI
 
-from app import healthcheck, ocr
+from app import healthcheck, ocr, karuta
 
 log = logging.getLogger("uvicorn")
 
@@ -11,6 +11,7 @@ def create_application() -> FastAPI:
     application = FastAPI()
     application.include_router(healthcheck.router)
     application.include_router(ocr.router)
+    application.include_router(karuta.router)
 
     return application
 

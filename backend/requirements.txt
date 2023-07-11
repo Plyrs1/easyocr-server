@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-easyocr==1.4.2
+easyocr @ git+https://github.com/Plyrs1/EasyOCR.git@551abd53ccdb1e428ffa0d785cbcb8f44837085b
 fastapi==0.75.1
 gunicorn==20.1.0
 python-multipart==0.0.5
